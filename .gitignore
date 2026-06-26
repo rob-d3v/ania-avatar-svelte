@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+*.log
+.vite/
+.svelte-kit/
+.demo-dist/
+
+# svelte-package transient temp dir (never ship it).
+dist/__package_types_tmp__/
+
+# NOTE: dist/ is intentionally NOT ignored. We commit the built package +
+# the CDN custom-element bundle (dist/ania-avatar-element.js) so jsDelivr /
+# unpkg can serve it straight from the GitHub repo without a publish step.
